@@ -1,5 +1,5 @@
-#Assignment 1#
-Key HTML files are  
+# Assignment 1
+Key HTML files:
 `personal.html`
 `zebra.html`
 `blog.html`
