@@ -1,2 +1,2 @@
-# CS193
-notes &amp; assignment backup of CS193
+# CS193C
+notes &amp; assignment backup of CS193C
