@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Configure Your GT Super Sportscar</title>
+<link href="reset.css" rel="stylesheet" />
+<link href="car.css" rel="stylesheet" />
+<script src="car.js" defer></script>
+</head>
+<body>
+<h1>Configure Your GT Super Sportscar</h1>
+<div id="grid">
+<div id="left">
+    <form id="price-form">
+        <div class="section">
+            <h2 class="header">Configuration</h2>
+            <table>
+                <tr>
+                    <td><input type="radio" name="configuration" value="17790" checked="checked" />GT Manual</td>
+                    <td class="right">$17,790.00</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="configuration" value="18590" />GT Automatic</td>
+                    <td class="right">$18,590.00</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="configuration" value="22455" />GT-S Manual</td>
+                    <td class="right">$22,455.00</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="configuration" value="23155" />GT-S Sportshift</td>
+                    <td class="right">$23,155.00</td>
+                </tr>
+            </table>
+        </div>
+        <div class="section">
+            <h2 class="header">Factory Options</h2>
+            <table>
+                <tr>
+                    <td><input type="radio" name="combo" value="1235" />Option Combo #1</td>
+                    <td class="right">$1,235.00</td>
+                </tr>
+                <tr>
+                    <td><ul><li>Power Windows, Doors, Cruise Control</li></ul><td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="combo" value="3354" />Option Combo #2</td>
+                    <td class="right">$3,354.00</td>
+                </tr>
+                <tr>
+                    <td><ul>
+                    <li>Rear Spoiler and Fog Lamps</li>
+                    <li>Keyless Entry</li>
+                    <li>Power Tilt & Slide Moonroof</li>
+                    <li>Power Windows, Doors, Cruise Control</li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="combo" value="0" checked="checked"/>No Combo</td>
+                    <td class="right">$0</td>
+                </tr>
+            </table>
+        </div>
+        <div class="section">
+            <h2 class="header">Dealer Options</h2>
+            <table>
+                <tr>
+                    <td><input type="checkbox" name="stereo" value="550" />Upgraded Stereo System</td>
+                    <td class="right">$550.00</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="security" value="399" />VIP Security System</td>
+                    <td class="right">$399.00</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="mirror" value="295" />Auto-Dimming Mirror</td>
+                    <td class="right">$295.00</td>
+                </tr>
+            </table>
+        </div>
+        <div class="section">
+            <h2 class="header">Total Price</h2>
+            <table><tr>
+                <td><input type="text" name="result" /></td>
+                <td class="right"><input type="button" id="calculate" value="Calculate Total" /></td>
+            </tr></table>
+        </div>
+    </form>
+</div>
+<div id="right">
+    <div class="section">
+        <h2 class="header">Choose A Color</h2>
+        <table>
+            <tr>
+                <td><select id="color" size="5" multiple>
+                    <option value="red" selected>Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="silver">Silver</option>
+                    <option value="white">White</option>
+                    <option value="black">Black</option>
+                </select></td>
+                <td class="right"><img id="car-picture" src="red.jpg" /></td>
+            </tr>
+        </table> 
+    </div>
+</div>
+</div> <!-- grid -->
+</body>
+</html>

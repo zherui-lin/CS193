@@ -1,0 +1,56 @@
+body {
+    font-family: sans-serif;
+    margin: 10px;
+}
+
+h1 {
+    margin: 10px 5px;
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+#grid {
+    display: grid;
+    justify-content: start;
+}
+
+#left {
+    grid-column-start: 1;
+}
+
+#right {
+    grid-column-start: 2;
+}
+
+.section {
+    margin: 5px;
+    border: black 1px solid;
+    padding: 5px;
+    width: 400px;
+}
+
+.header {
+    border: black 1px solid;
+    padding: 5px;
+    color: white;
+    background-color: dimgray;
+    font-size: 16pt;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+table {
+    width: 100%;
+}
+
+.right {
+    text-align: right;
+}
+
+li {
+    font-size: 10pt;
+}
+
+#color {
+    width: 50px;
+}
