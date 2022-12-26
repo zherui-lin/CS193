@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Book Search</title>
+<link href="reset.css" rel="stylesheet" />
+<link href="bookland.css" rel="stylesheet" />
+<script src="bookland.js" defer></script>
+</head>
+<body>
+    <h1>bookland</h1>
+    <div id="main">
+    <form>
+    <table>
+        <tr>
+            <td>Author Name:</td>
+            <td colspan="2"><input type="text" name="author" class="text" /></td> <!-- rowspan and colspan can specify spans -->
+        </tr>
+        <tr>
+            <td>Book Title:</td>
+            <td colspan="2"><input type="text" name="title" class="text" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="button" id="find" value="Find Book" class="button" /></td>
+            <td><input type="reset" id="clear" value="Clear Info" class="button" /></td>
+        </tr>
+        <tr>
+            <td id="last" colspan="3"><textarea rows="12" name="description">Please input an author or a book title!</textarea></td> <!-- textarea is not input elem -->
+        </tr>
+    </table>
+    </form>
+    </div>
+</body>
+</html>

@@ -3,7 +3,7 @@ function calculateTotal() {
     var form = document.getElementById("price-form");
     res += parseInt(form.configuration.value);
     res += parseInt(form.combo.value);
-    for (checkbox of form.getElementsByTagName("input")) {
+    for (let checkbox of form.getElementsByTagName("input")) {
         if (checkbox.type === "checkbox" && checkbox.checked) {
             res += parseInt(checkbox.value);
         }

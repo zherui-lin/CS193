@@ -1,0 +1,49 @@
+body {
+    font-family: sans-serif;
+    font-size: 12pt;
+    margin: 10px calc((100% - 800px) / 2);
+}
+
+h1 {
+    width: 100%;
+    font-size: 80pt;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+}
+
+#main {
+    height: 480px;
+    width: 800px;
+    border: 1px black solid;
+}
+
+table {
+    width: 500px;
+    margin: 60px auto;
+}
+
+.text {
+    box-sizing: border-box;
+    width: 100%;
+    border: none; /* remove all borders */
+    border-bottom: 1px black solid;
+}
+
+.button {
+    width: 80%;
+    margin: 5px;
+    border: 1px red solid;
+    padding: 5px;
+    color: red;
+    background-color: white;
+}
+
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 5px;
+    border: 1px black dashed;
+    padding: 10px;
+    resize: none; /* fix size, cannot drag */
+}
