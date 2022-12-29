@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Bay Area Colleges and Universities</title>
+<link href="reset.css" rel="stylesheet" />
+<link href="colleges.css" rel="stylesheet" />
+<script src="colleges.js" defer></script>
+</head>
+<body>
+<h1>Bay Area Colleges and Universities</h1>
+<div id="main">
+    <div id="left">
+        <table id="data">
+            <tr id="header">
+                <th>Name</th>
+                <th>SAT High</th>
+                <th>SAT Low</th>
+                <th>Tuition</th>
+            </tr>
+        </table>
+    </div>
+    <div id="right">
+        <form>
+        <table>
+            <tr><th colspan="2">Search Criteria</th></tr>
+            <tr><td colspan="2">
+                <input type="radio" name="ownership" value="public" />Public
+                <input type="radio" name="ownership" value="private" />Private
+                <input type="radio" name="ownership" value="none" checked />Don't Care
+            </td></tr>
+            <tr>
+                <td>Maximum Tuition<br /><span class="sub">leave blank for don't care</span></td>
+                <td><input type="text" name="tuition" /></td>
+            </tr>
+            <tr>
+                <td>Maximum High SAT<br /><span class="sub">leave blank for don't care</span></td>
+                <td><input type="text" name="high" /></td>
+            </tr>
+            <tr>
+                <td>Minimum Low SAT<br /><span class="sub">leave blank for don't care</span></td>
+                <td><input type="text" name="low" /></td>
+            </tr>
+        </table>
+        <input type="button" id="update" value="Update" />
+        </form>
+    </div>
+</div>
+</body>
+</html>

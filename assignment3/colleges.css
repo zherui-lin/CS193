@@ -1,0 +1,52 @@
+body {
+    margin: 10px;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+#main {
+    display: grid;
+    justify-content: start;
+    margin-top: 20px;
+}
+
+#left {
+    grid-column-start: 1;
+}
+
+#right {
+    grid-column-start: 2;
+    margin-left: 20px;
+}
+
+table {
+    border: 1px black solid;
+    border-collapse: collapse;
+}
+
+th {
+    color: white;
+    background-color: black;
+}
+
+#data th, #data td {
+    border-left: 1px dimgray solid;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.odd {
+    background-color: darkgray;
+}
+
+.sub {
+    font-size: 9pt;
+}
+
+#update {
+    margin-top: 10px;
+}
