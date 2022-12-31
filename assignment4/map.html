@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Stanford Map</title>
+<link href="reset.css" rel="stylesheet" />
+<link href="map.css" rel="stylesheet" />
+<script src="coordinates.js" defer></script>
+<script src="map.js" defer></script>
+</head>
+<body>
+<div id="frame">
+    <img id="map" src="map-xl.gif" alt="map" />
+</div>
+<div id="panel">
+    <div id="zooming">
+        <button id="zoomIn">+</button>
+        <button id="zoomOut">-</button>
+    </div>
+    <div id="navigation">
+        <button id="up">^</button>
+        <button id="left">&lt;</button>
+        <button id="right">&gt;</button>
+        <button id="down">v</button>
+    </div>
+    <div id="search-location">
+        <form>
+        <input type="text" id="location" />
+        <input type="button" id="search" value="search"/>
+        </form>
+    </div>
+</div>
+</body>
+</html>

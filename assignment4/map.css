@@ -1,0 +1,72 @@
+body {
+    display: grid;
+    justify-content: start;
+}
+
+#frame {
+    grid-column-start: 1;
+    overflow: hidden;
+    margin: 10px;
+    border: 10px gray solid;
+}
+
+#map {
+    position: relative;
+}
+
+#panel {
+    grid-column-start: 2;
+    margin: 10px;
+    width: 100px;
+}
+
+button {
+    height: 30px;
+    width: 30px;
+}
+
+#zooming {
+    margin: 5px auto;
+    width: fit-content;
+}
+
+#navigation {
+    display: grid;
+    justify-content: start;
+    margin: 5px auto;
+    width: fit-content;
+}
+
+#up {
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+#left {
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
+
+#right {
+    grid-row-start: 2;
+    grid-column-start: 3;
+}
+
+#down {
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+
+#search-location {
+    margin-top: 20px;
+}
+
+#location {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#search {
+    margin-top: 5px;
+    float: right;
+}

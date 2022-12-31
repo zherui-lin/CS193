@@ -1,0 +1,38 @@
+body {
+    margin: 0px;
+}
+
+#photoSection {
+    position: absolute;
+    height: 600px;
+    width: 800px;
+}
+
+#caption {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.overlay {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+    height: 600px;
+    width: 400px;
+    padding: 0 50px;
+    color: gray;
+    font-size: 60pt;
+    line-height: 600px;
+    opacity: 0.8;
+}
+
+#forwardOverlay {
+    right: 0px;
+    text-align: right;
+}
+
+#backwardOverlay {
+    left: 0px;
+    text-align: left;
+}
