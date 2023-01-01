@@ -145,11 +145,12 @@ document.getElementById("right").addEventListener("click", scrollMap(1, 0));
 document.getElementById("down").addEventListener("click", scrollMap(0, 1));
 
 function searchLocation() {
+    var {imageX, imageY} = getImageXY();
     var location = document.getElementById("location").value;
     for (let loc of locationArray) {
         if (loc.names.includes(location)) {
-            var originalX = loc.x;
-            var originalY = loc.y;
+            var originalX = loc.x + imageX;
+            var originalY = loc.y + imageY;
         }
     }
     var imageXLWidth = images[0].width;
@@ -157,10 +158,9 @@ function searchLocation() {
     var map = document.getElementById("map");
     var currWidth = map.width;
     var currHeight = map.height;
-    var {imageX, imageY} = getImageXY();
     var {centerX, centerY} = getCenterXY();
-    var currX = originalX / imageXLWidth * currWidth + imageX;
-    var currY = originalY / imageXLHeight * currHeight + imageY;
+    var currX = (originalX - imageX) / imageXLWidth * currWidth + imageX;
+    var currY = (originalY - imageY) / imageXLHeight * currHeight + imageY;
     moveImage([imageX, imageY], [currX, currY], [centerX, centerY]);
 }
 
