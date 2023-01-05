@@ -1,0 +1,20 @@
+body {
+    margin: 10px;
+}
+
+h1 {
+    font-size: 32pt;
+}
+
+h2 {
+    float: left;
+}
+
+#input {
+    width: fit-content;
+    margin-top: 10px;
+}
+
+textarea {
+    resize: none;
+}

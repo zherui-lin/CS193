@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Open Weather via AJAX</title>
+<link href="reset.css" rel="stylesheet" />
+<link href="weather.css" rel="stylesheet" />
+<script src="weather.js" defer></script>
+</head>
+<body>
+    <h1>Open Weather via AJAX</h1>
+    <form>
+        <div id="input">
+            <h2><b>Enter ZIP code:&nbsp;</b></h2>
+            <input type="text" name="zipCode" id="zipCode"/>
+            <input type="button" name="getWeather" id="getWeather" value="Get Weather"/>
+            <input type="reset" value="Clear"/>
+        </div>
+        <textarea rows="10" cols="50" readonly></textarea>
+    </form>
+</body>
+</html>
